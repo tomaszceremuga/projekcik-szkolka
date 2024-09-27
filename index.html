@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS:GO T&T | Commands, Tutorials, Tips...</title>
+  <link rel="icon" href="img/help_icon.png">
+  <link rel="stylesheet" href="css/style.scss">
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dark.css">  
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top x-0 z-40" style=" min-height: 84px !important; background-color: #13161B; color: rgb(255, 255, 255); padding-left: 10%; padding-right: 10%; height: 84px; top: -3px !important">
+
+
+    <!-- logo + nazwa -->
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #13161B;  border-radius: 10px; padding-left: 12px;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.gg/2qhRYA9V">Question?</a>
+        </li>
+        
+      </ul>
+      
+      <!-- przelacznik -->
+      
+      <div class="buttons2">
+      <input type="checkbox" class="checkbox" id="checkbox" style="margin-top: -3px !important; margin-right: -13px !important; color: rgb(254, 255, 240);">
+      <label for="checkbox" class="label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16.3" height="16.3" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+          </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+          </svg>
+        <div class="ball"> </div>
+      </label>
+      
+
+      <!-- searcher -->
+      
+      <form class="form-inline my-2 my-lg-0" style="margin-top: 11px !important; color: #343536;" id="searchware">
+        <input class="form-control shadow-none" type="search" placeholder="Search.." aria-label="Search"
+          style="border: 0;border-radius: 50px 0 0 50px; width: 150px; background-color: #181A1F; color: rgb(254, 255, 240 ) !important;">
+        <button class="fi btn  shadow-none" type="submit" style="border-radius: 0 50px 50px 0;height: calc(1.5em + .75rem + 2px) !important; background-color: #181A1F; color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+      </form>
+      </div>
+    </div>
+    </nav>
+
+
+
+
+
+    <article>
+        <h2>Welcome CS:GO tips & tricks!</h2>
+        <h6> <span class="purple-text"> Here you can find command, guides, and tips for cs</span></h6>
+        <hr style="margin-bottom: 50px;">
+        <div class="center"<h5>Suggested tutorials</h5></div>
+        <!-- <h6> <span class="purple-text">Simple tutorials that will improve your gameplay</span></h6> -->
+            
+        
+          
+          
+          
+          
+          
+          
+
+           <!-- <div class="row gap-8 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center" style="align-items: left !important;">
+            
+            <div class="col">
+              <div class="card">
+                <img src="img/index-cards/cyclenade.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nade menu</h5>
+                  <hr>
+                  <p class="card-text">Simple nade menu that will help you pick nade quicklyer, just select the  item</p> <br>
+                  <a class="card-link2" href="articles/nade-menu/nadeMenu.html" >Check this out!</a>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <hr>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            
+           
+          
+              
+          </div>
+        </div>  -->
+        
+        <section id="slider">
+          
+          
+          
+          <input type="radio" name="slider" id="s1" checked> 
+          <input type="radio" name="slider" id="s2"> 
+          <input type="radio" name="slider" id="s3"> 
+          <input type="radio" name="slider" id="s4"> 
+          <input type="radio" name="slider" id="s5">   
+          
+
+          <label for="s1" id="slide1">
+            <img src="img/index-cards/cyclenade.png" alt="">
+            <p class="card-title text-center">Nade menu</p>
+            <p class="card-text text-center">Simple nade menu that will help you pick nade quicklyer, just select the  item</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+            <a class="card-link2" href="articles/nade-menu/nadeMenu.html" >Check this out!</a>
+            </div>
+
+          </label>
+          <label for="s2" id="slide2">
+            <video id="card-video" autoplay muted loop src="video/hjump-card.mp4"></video>
+            <p class="card-title text-center">"Higher jump" bind</p>
+            <p class="card-text text-center">Bind that let you jump higher, you will be able to jump in every places</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+            <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+            
+
+          </label>
+          <label for="s3" id="slide3">
+            <img src="img/index-cards/textmod.jpg" alt="">
+            <p class="card-title text-center">Text mode</p>
+            <p class="card-text text-center">Extention that change titles and comunicates in game</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+          </label>
+
+
+          <label for="s4" id="slide4">
+            <img src="img/index-cards/simpleradar.jpg" alt="">
+            <p class="card-title text-center">Simple radar</p>
+            <p class="card-text text-center">Clearer and more accurate radar </p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+
+          </label>
+
+          <label for="s5" id="slide5">
+            <img src="img/index-cards/autoexeccard.jpg" alt="">
+            <p class="card-title text-center">Autoexec file</p>
+            <p class="card-text text-center">A file thanks to which you will always have your settings applied in the game</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+
+          </label> 
+        </section>
+
+        <section id="mobile"> 
+          
+          <label for="s1" id="slide1">
+            <img src="img/index-cards/cyclenade.png" alt="">
+            <p class="card-title text-center">Nade menu</p>
+            <p class="card-text text-center">Simple nade menu that will help you pick nade quicklyer, just select the  item</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+            <a class="card-link2" href="articles/nade-menu/nadeMenu.html" >Check this out!</a>
+            </div>
+
+          </label>
+          <label for="s2" id="slide2">
+            <video id="card-video" autoplay muted loop src="video/hjump-card.mp4"></video>
+            <p class="card-title text-center">"Higher jump" bind</p>
+            <p class="card-text text-center">Bind that let you jump higher, you will be able to jump in every places</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+            <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+            
+
+          </label>
+          <label for="s3" id="slide3">
+            <img src="img/index-cards/textmod.jpg" alt="">
+            <p class="card-title text-center">Text mode</p>
+            <p class="card-text text-center">Extention that change titles and comunicates in game</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+          </label>
+
+
+          <label for="s4" id="slide4">
+            <img src="img/index-cards/simpleradar.jpg" alt="">
+            <p class="card-title text-center">Simple radar</p>
+            <p class="card-text text-center">Clearer and more accurate radar </p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+
+          </label>
+
+          <label for="s5" id="slide5">
+            <img src="img/index-cards/autoexeccard.jpg" alt="">
+            <p class="card-title text-center">Autoexec file</p>
+            <p class="card-text text-center">A file thanks to which you will always have your settings applied in the game</p> <br>
+            <div class="text-center" style="margin-top: 12px;">
+              <a class="card-link2" href="#" >Available soon!</a>
+            </div>
+
+
+          </label> 
+
+
+        </section> 
+      </section>
+
+
+      </article>
+      
+      
+      <footer>
+        <div class="in-footer">
+          <div class="footer-left">
+            <a href="#" style="font-size: 20px;">
+            <p class="footer-text"> CS:GO T&T</a>
+            <br>
+            <span style="font-size: 10px;">by Tomasz Ceremuga 1TP</span></p>
+          </div>
+          <div class="footer-mid"></div>
+          <div style="display: flex; margin-top: 3px; margin-left: 15px;">
+            <div class="newsletter">
+            <div class="icon-newsletter"><i class="bi bi-envelope"></i></div>
+            <input class="input-newsletter" type="email" name="" value="" placeholder="Enter your email">
+            <button class="button-newsletter" type="button" name="subscribe">Subscribe!</button>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="switcher.js"></script>
+    
+    <script src="search.js">
+    
+    </script>
+</body>
+
+</html>

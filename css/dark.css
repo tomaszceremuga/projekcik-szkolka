@@ -1,0 +1,42 @@
+body{
+    background: #181A1F;
+    color: rgb(254, 255, 240) !important;
+}
+
+hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid rgb(116, 116, 116);
+    margin: 1em 0; padding: 0;
+}
+.card{
+    background-color: #212429;
+    color: #fefff0;
+    box-shadow: 0px 38px 100px -26px rgba(5, 5, 6, 1);
+
+}
+.lighter{
+    background-color: #212429;
+    box-shadow: 0px 38px 100px -26px rgba(5, 5, 6, 1);
+}
+.bluer{
+    box-shadow: 0px 38px 100px -26px rgba(5, 5, 6, 1);
+}
+.lighte11 p{
+    color: #fefff0;
+}
+.label1{
+    color: #fefff0;
+}
+.copy-text input.text{
+    color: #fefff0;
+    background-color: #292c30;
+
+}
+.advertisment-img{
+    border: 10px solid #212429;
+}
+.like{
+    color: white;
+    
+}
+

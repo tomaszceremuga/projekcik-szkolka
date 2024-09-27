@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS:GO T&T | Nade menu</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="icon" href="../../img/help_icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+
+
+
+  <style>
+    @media only screen and (max-width: 991px) {
+      .label {
+        margin-top: 3px !important;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top x-0 z-30"
+    style=" min-height: 84px !important; background-color: #13161B; color: rgb(255, 255, 255); padding-left: 10%; padding-right: 10%; height: 84px; top: -3px !important">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      style="background-color: #13161B; padding: 3px 3px 3px 3px; border-radius: 15px !important;">
+
+
+      <span class="navbar-toggler-icon" style="color: rgb(254, 255, 240); "><svg xmlns="http://www.w3.org/2000/svg"
+          width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+      style="background-color: #13161B;  border-radius: 10px; padding-left: 12px;">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.gg/2qhRYA9V">Question?</a>
+        </li>
+
+      </ul>
+
+      <!-- przelacznik -->
+      <div class="buttons2">
+        <input type="checkbox" class="checkbox" id="checkbox"
+          style="margin-top: -3px !important; margin-right: -13px !important; color: rgb(254, 255, 240);">
+        <label for="checkbox" class="label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.3" height="16.3" fill="currentColor" class="bi bi-moon"
+            viewBox="0 0 16 16">
+            <path
+              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-brightness-high" viewBox="0 0 16 16">
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+          </svg>
+          <div class="ball"> </div>
+        </label>
+
+
+        <!-- searcher -->
+
+        <form class="form-inline my-2 my-lg-0" style="display: flex; margin-top: 3px !important;" id="searchware">
+          <input class="form-control shadow-none" type="search" placeholder="Search..." aria-label="Search"
+            style="border: 0;border-radius: 50px 0 0 50px; width: 150px; margin-right: -5px !important;  background-color: #181A1F; color: rgb(254, 255, 240 ) !important;">
+          <button class="btn shadow-none" type="submit"
+            style="border-radius: 0 50px 50px 0;height: calc(1.5em + .75rem + 2px) !important; background-color: #181A1F; color: #fefff0; position: relative;"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="article1">
+    <div class="sections">
+      <div class="left-section">
+
+
+        <h2 class="htitle">Nade menu</h2>
+        <h6 class="description"> <span class="purple-text">"Nade menu" will help you pick nade quickly</span> </h6>
+
+
+        <div class="lighter" style="margin-top: 40px;">
+          <p class="inlighter">Example:</p>
+          <div class="video-container" style="width: 100%; text-align: center;">
+            <video id="video1" autoplay muted loop
+              style="width: 80%; max-width: 650px ;border-radius: 5px; box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 1);">
+              <source src="../../video/nade-menu-example.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+        </div>
+
+        <div class="download-button">
+          <a class="download-link" href="../../donwloads/radial_quickinventory.txt" download="">
+            <!-- href="https://github.com/tomaszceremuga/quick_inventory/archive/refs/heads/master.zip" -->
+            <p>
+              Download "radial_quickinventory.txt"
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download"
+                viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+              </svg>
+            </p>
+          </a>
+
+        </div>
+
+        <div class="lighter">
+          <p class="inlighter">Instalation</p>
+          <p style="margin-left: 6vw;"> Download radial_quickinventory.txt <br>
+            <br>
+            Open steam, go to liblary.
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;∟︎ right click on cs:go
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ∟︎ properties
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ∟︎ local files
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ∟︎ browse
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            ∟︎ go to csgo
+            <br>
+            <br> Put there "radial_quickinventory.txt"
+          </p>
+
+          <div class="copy-bind">
+            <div class="label1">
+              Paste this bind in console:
+            </div>
+            <div class="copy-text">
+              <input type="text" class="text" value="bind 4 +quickinv">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-clipboard" viewBox="0 0 16 16">
+                  <path
+                    d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                  <path
+                    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="right-section">
+        <div class="lighter">
+          <center>
+          <i id="btnlike" class="bi bi-heart"></i>
+          &nbsp;<span id="count_of_likes">0</span>
+        </div>
+        
+        <div class="advertisement">
+          <a href="#" class="advertisment-link"><img src="https://www.signs.pl/il/16/Coca-Cola_od_nas.jpg"
+              alt="advertisement" class="advertisment-img"></a>
+            
+        </div>
+      </center>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="in-footer">
+      <div class="footer-left">
+        <a href="#" style="font-size: 20px;">
+          <p class="footer-text"> CS:GO T&T
+        </a>
+        <br>
+        <span style="font-size: 10px;">by Tomasz Ceremuga 1TP</span></p>
+      </div>
+      <div class="footer-mid"></div>
+      <div style="display: flex; margin-top: 3px; margin-left: 15px;">
+        <div class="newsletter">
+          <div class="icon-newsletter"><i class="bi bi-envelope"></i></div>
+          <input class="input-newsletter" type="email" name="" value="" placeholder="Enter your email">
+          <button class="button-newsletter" type="button" name="subscribe">Subscribe!</button>
+        </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+  <script src="../../script.js"></script>
+  <script src="../../like.js"></script>
+  <script>
+    const btn = document.querySelector("#btnlike")
+    const span = document.querySelector("#count_of_likes")
+
+      let i = 0 
+    btn.addEventListener("click", () => {
+        i++;
+        span.textContent = i
+    })
+  </script>
+</body>
+
+</html>
